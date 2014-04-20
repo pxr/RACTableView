@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83EFD67A095E403DAAF1E09F /* libPods-RACTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB05A5E69E94349BECB8B00 /* libPods-RACTableView.a */; };
 		DAFC6A4019045ACE009F1AAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFC6A3F19045ACE009F1AAD /* Foundation.framework */; };
 		DAFC6A4219045ACE009F1AAD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFC6A4119045ACE009F1AAD /* CoreGraphics.framework */; };
 		DAFC6A4419045ACE009F1AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFC6A4319045ACE009F1AAD /* UIKit.framework */; };
@@ -19,6 +20,9 @@
 		DAFC6A5B19045ACE009F1AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFC6A4319045ACE009F1AAD /* UIKit.framework */; };
 		DAFC6A6319045ACE009F1AAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAFC6A6119045ACE009F1AAD /* InfoPlist.strings */; };
 		DAFC6A6519045ACE009F1AAD /* RACTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFC6A6419045ACE009F1AAD /* RACTableViewTests.m */; };
+		DAFC6A7019046FA3009F1AAD /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFC6A6F19046FA3009F1AAD /* ViewModel.m */; };
+		DAFC6A7319046FE6009F1AAD /* KVOArrayHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFC6A7219046FE6009F1AAD /* KVOArrayHolder.m */; };
+		DAFC6A76190470E1009F1AAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFC6A75190470E1009F1AAD /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3AB05A5E69E94349BECB8B00 /* libPods-RACTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7009BB9385D941759190F952 /* Pods-RACTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACTableView.xcconfig"; path = "Pods/Pods-RACTableView.xcconfig"; sourceTree = "<group>"; };
 		DAFC6A3C19045ACE009F1AAD /* RACTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFC6A3F19045ACE009F1AAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DAFC6A4119045ACE009F1AAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +54,12 @@
 		DAFC6A6019045ACE009F1AAD /* RACTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RACTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		DAFC6A6219045ACE009F1AAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DAFC6A6419045ACE009F1AAD /* RACTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTableViewTests.m; sourceTree = "<group>"; };
+		DAFC6A6E19046FA3009F1AAD /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		DAFC6A6F19046FA3009F1AAD /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		DAFC6A7119046FE6009F1AAD /* KVOArrayHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOArrayHolder.h; sourceTree = "<group>"; };
+		DAFC6A7219046FE6009F1AAD /* KVOArrayHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOArrayHolder.m; sourceTree = "<group>"; };
+		DAFC6A74190470E1009F1AAD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAFC6A75190470E1009F1AAD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 				DAFC6A4219045ACE009F1AAD /* CoreGraphics.framework in Frameworks */,
 				DAFC6A4419045ACE009F1AAD /* UIKit.framework in Frameworks */,
 				DAFC6A4019045ACE009F1AAD /* Foundation.framework in Frameworks */,
+				83EFD67A095E403DAAF1E09F /* libPods-RACTableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 				DAFC6A5E19045ACE009F1AAD /* RACTableViewTests */,
 				DAFC6A3E19045ACE009F1AAD /* Frameworks */,
 				DAFC6A3D19045ACE009F1AAD /* Products */,
+				7009BB9385D941759190F952 /* Pods-RACTableView.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +114,7 @@
 				DAFC6A4119045ACE009F1AAD /* CoreGraphics.framework */,
 				DAFC6A4319045ACE009F1AAD /* UIKit.framework */,
 				DAFC6A5819045ACE009F1AAD /* XCTest.framework */,
+				3AB05A5E69E94349BECB8B00 /* libPods-RACTableView.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,10 +122,16 @@
 		DAFC6A4519045ACE009F1AAD /* RACTableView */ = {
 			isa = PBXGroup;
 			children = (
+				DAFC6A7119046FE6009F1AAD /* KVOArrayHolder.h */,
+				DAFC6A7219046FE6009F1AAD /* KVOArrayHolder.m */,
 				DAFC6A4E19045ACE009F1AAD /* PRAppDelegate.h */,
 				DAFC6A4F19045ACE009F1AAD /* PRAppDelegate.m */,
 				DAFC6A5119045ACE009F1AAD /* Images.xcassets */,
 				DAFC6A4619045ACE009F1AAD /* Supporting Files */,
+				DAFC6A6E19046FA3009F1AAD /* ViewModel.h */,
+				DAFC6A6F19046FA3009F1AAD /* ViewModel.m */,
+				DAFC6A74190470E1009F1AAD /* ViewController.h */,
+				DAFC6A75190470E1009F1AAD /* ViewController.m */,
 			);
 			path = RACTableView;
 			sourceTree = "<group>";
@@ -151,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAFC6A6819045ACE009F1AAD /* Build configuration list for PBXNativeTarget "RACTableView" */;
 			buildPhases = (
+				D4342611AE9D4AAA8F6A178E /* Check Pods Manifest.lock */,
 				DAFC6A3819045ACE009F1AAD /* Sources */,
 				DAFC6A3919045ACE009F1AAD /* Frameworks */,
 				DAFC6A3A19045ACE009F1AAD /* Resources */,
+				3FE042D471724DCF9CE04619 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,13 +258,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FE042D471724DCF9CE04619 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-RACTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4342611AE9D4AAA8F6A178E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DAFC6A3819045ACE009F1AAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFC6A7319046FE6009F1AAD /* KVOArrayHolder.m in Sources */,
+				DAFC6A7019046FA3009F1AAD /* ViewModel.m in Sources */,
 				DAFC6A5019045ACE009F1AAD /* PRAppDelegate.m in Sources */,
 				DAFC6A4C19045ACE009F1AAD /* main.m in Sources */,
+				DAFC6A76190470E1009F1AAD /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +414,7 @@
 		};
 		DAFC6A6919045ACE009F1AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7009BB9385D941759190F952 /* Pods-RACTableView.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -368,6 +428,7 @@
 		};
 		DAFC6A6A19045ACE009F1AAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7009BB9385D941759190F952 /* Pods-RACTableView.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -438,6 +499,7 @@
 				DAFC6A6A19045ACE009F1AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAFC6A6B19045ACE009F1AAD /* Build configuration list for PBXNativeTarget "RACTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +508,7 @@
 				DAFC6A6D19045ACE009F1AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
