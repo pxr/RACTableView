@@ -7,6 +7,11 @@
 //
 
 #import "ViewModel.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+@interface ViewModel ()
+@property (nonatomic) RACCommand *addItemCommand;
+@end
 
 @implementation ViewModel
 
@@ -24,4 +29,15 @@
     [self.holder addDataObject:@"two"];
     [self.holder addDataObject:@"three"];
 }
+
+- (RACCommand*) addItemCommand {
+    if (!_addItemCommand) {
+        _addItemCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+            [self.holder addDataObject:@"item"];
+            return [RACSignal empty];
+        }];
+    }
+    return _addItemCommand;
+}
+
 @end

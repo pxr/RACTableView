@@ -20,28 +20,52 @@
 
 - (instancetype)init
 {
+    NSLog(@"ViewController init");
     self = [super init];
     if (!self) return nil;
     
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    NSLog(@"viewDidLoad");
+    [super viewDidLoad];
     _viewModel = [[ViewModel alloc] init];
     
     [self bindToViewModel];
     
-    [self setupTableView];
-    
-    [_viewModel testChanges];
-    return self;
-}
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    NSLog(@"viewDidAppear");
+    [self setupTableView];
+    [self setupNavBarButtons];
+    
+    [_viewModel testChanges];
+    
+}
 - (void)setupTableView {
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height)];
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
+}
+
+- (void)setupNavBarButtons {
+    
+    assert(self.navigationController);
+    
+    UIBarButtonItem *addActionButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:nil action:nil];
+    addActionButton.rac_command = self.viewModel.addItemCommand;
+	self.navigationItem.leftBarButtonItem = addActionButton;
+    
+    UIBarButtonItem *deleteActionButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRedo target:self action:@selector(addAction:)];
+	self.navigationItem.rightBarButtonItem = deleteActionButton;
+}
+
+- (void)addAction:(id)sender {
+    
 }
 
 - (void)bindToViewModel {
@@ -50,8 +74,13 @@
     [changeSignal subscribeNext:^(RACTuple *x){
         self.dataArray = x.first;
         NSDictionary *changeDictionary = x.second;
+        NSIndexSet *indexSet = changeDictionary[@"indexes"];
         
-        NSLog(@"change: %@", changeDictionary);
+        NSLog(@"change count: %d", [indexSet count]);
+        [self.tableView beginUpdates];
+          NSIndexPath *indexPath = [NSIndexPath indexPathForRow:indexSet.firstIndex inSection:0];
+          [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [self.tableView endUpdates];
     }];
 }
 

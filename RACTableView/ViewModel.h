@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "KVOArrayHolder.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface ViewModel : NSObject
 
 @property (nonatomic) KVOArrayHolder *holder;
 
 - (void)testChanges;
+- (RACCommand*) addItemCommand;
 
 @end
