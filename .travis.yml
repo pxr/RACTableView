@@ -1,4 +1,3 @@
 language: objective-c
 before_install: gem update cocoapods
-xcode_workspace: RACTableView.xcworkspace
-xcode_scheme: RACTableView 
+script: xcodebuild -workspace RACTableView.xcworkspace -scheme RACTableView -sdk iphonesimulator 
