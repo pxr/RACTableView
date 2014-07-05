@@ -1,2 +1,3 @@
 language: objective-c
 before_install: gem update cocoapods
+xcode_project: RACTableView.xcodeproj 
