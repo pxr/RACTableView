@@ -1,3 +1,7 @@
 language: objective-c
 before_install: gem update cocoapods
-script: xcodebuild -workspace RACTableView.xcworkspace -scheme RACTableView -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO 
+script: xcodebuild -workspace RACTableView.xcworkspace -scheme RACTableView -sdk iphonesimulator
+  ONLY_ACTIVE_ARCH=NO
+env:
+  global:
+    secure: VbFm51cFhzz705lDH1wSKtClp+7iLC3SR5CQ0Xcpcq2hNvOecuaTSpVe1RWRrBIN8D/KjXrGiopOvwjb1qUYp3GXrfy1lfBfSDSQ01LNozMHbHk808t0moLpoUm0+DYilikNHV3o2lUnvRFlIsveDyQMT9flzLay/gNVS5ZHybY=
