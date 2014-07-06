@@ -4,4 +4,5 @@ script: xcodebuild -workspace RACTableView.xcworkspace -scheme RACTableView -sdk
   ONLY_ACTIVE_ARCH=NO
 env:
   global:
-    secure: VbFm51cFhzz705lDH1wSKtClp+7iLC3SR5CQ0Xcpcq2hNvOecuaTSpVe1RWRrBIN8D/KjXrGiopOvwjb1qUYp3GXrfy1lfBfSDSQ01LNozMHbHk808t0moLpoUm0+DYilikNHV3o2lUnvRFlIsveDyQMT9flzLay/gNVS5ZHybY=
+  - secure: q/SHh3sbP50/dQ5IWgx5ApLg4hWj/+19GgacCFHS/jNmqLvUEMKxaeGdvlzD0DqZGiosayzzJzmtVF8OXkTNr78nT5ttkFVVy4bF67zpKI36CRLKekm+6zObaL+1PCpZ3egx9sBdDSxM5+xzSfK3yOnN/9AIeJqNgs/bJY7TwN4=
+  - secure: gOdpFhYfE9SbyCBz9ThTryDWZ9CGTM7OMok5YsAzr/hqQaaEPScgp2aX9A12Nc82zk1GI7jJIqq+LUWe5DW7WFKyNQvvyiz7XB6n+N/yiEEBwnuMem2yGoBtTuViC0oNxjv5kWx93GvesMPF+PQSS2l/n28I1/zE6bK8C1sZG1A=
