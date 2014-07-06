@@ -38,6 +38,7 @@
 /* Begin PBXFileReference section */
 		3AB05A5E69E94349BECB8B00 /* libPods-RACTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7009BB9385D941759190F952 /* Pods-RACTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACTableView.xcconfig"; path = "Pods/Pods-RACTableView.xcconfig"; sourceTree = "<group>"; };
+		DA8562381968F89C00AFFA79 /* UploadToTestflight.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = UploadToTestflight.sh; sourceTree = "<group>"; };
 		DAFC6A3C19045ACE009F1AAD /* RACTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFC6A3F19045ACE009F1AAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DAFC6A4119045ACE009F1AAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,6 +144,7 @@
 				DAFC6A4819045ACE009F1AAD /* InfoPlist.strings */,
 				DAFC6A4B19045ACE009F1AAD /* main.m */,
 				DAFC6A4D19045ACE009F1AAD /* RACTableView-Prefix.pch */,
+				DA8562381968F89C00AFFA79 /* UploadToTestflight.sh */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -376,6 +378,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "B59EF95C-6C3D-4908-95BC-2D5A5332C491";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -407,6 +410,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "B59EF95C-6C3D-4908-95BC-2D5A5332C491";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -418,10 +422,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RACTableView/RACTableView-Prefix.pch";
 				INFOPLIST_FILE = "RACTableView/RACTableView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5104F24D-A2C8-46C2-92D9-E3B11522D311";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -432,10 +438,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RACTableView/RACTableView-Prefix.pch";
 				INFOPLIST_FILE = "RACTableView/RACTableView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5104F24D-A2C8-46C2-92D9-E3B11522D311";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
